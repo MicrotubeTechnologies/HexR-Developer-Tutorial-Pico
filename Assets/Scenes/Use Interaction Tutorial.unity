@@ -392,7 +392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Balloon
+      value: "Balloon\n\u6C14\u7403"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8446940085426454621, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -408,7 +412,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Palm Grab with Hand Squeeze
+      value: "Palm Grab with Hand Squeeze\n\u638C\u5FC3\u6293\u53D6\u5E76\u63E1\u7D27\u624B\u638C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1137,7 +1145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: 'Drill '
+      value: "Drill\n\u7535\u94BB"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8446940085426454621, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1153,7 +1165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Palm Grab with index finger use
+      value: "Palm Grab with index finger use\n\u638C\u5FC3\u6293\u53D6\u5E76\u7528\u98DF\u6307\u6263\u52A8\u6273\u673A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

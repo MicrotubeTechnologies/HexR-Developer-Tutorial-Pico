@@ -587,7 +587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Button (XR Interactable)
+      value: "Button (XR Interactable)\n\u6309\u94AE\uFF08XR \u4EA4\u4E92\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -619,9 +619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: 'Haptics is triggered by XR event.
-
-'
+      value: "Haptics is triggered by XR event.\n\u89E6\u89C9\u53CD\u9988\u7531 XR \u4E8B\u4EF6\u89E6\u53D1\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -1374,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Apple (Free Haptics)
+      value: "Apple (Free Haptics)\n\u82F9\u679C\uFF08\u81EA\u7531\u89E6\u89C9\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -1406,9 +1404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: 'Haptics is triggered based on physics collider.
-
-'
+      value: "Haptics is triggered based on physics collider.\n\u89E6\u89C9\u53CD\u9988\u57FA\u4E8E\u7269\u7406\u78B0\u649E\u4F53\u89E6\u53D1\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -2442,7 +2438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Key (Pinch Grab)
+      value: "Key (Pinch Grab)\n\u94A5\u5319\uFF08\u634F\u53D6\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -2474,9 +2470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: 'Haptics is triggered on pinch
-
-'
+      value: "Haptics is triggered on pinch\n\u89E6\u89C9\u53CD\u9988\u5728\u634F\u5408\u65F6\u89E6\u53D1"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -12407,7 +12401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Torch (Palm Grab)
+      value: "Torch (Palm Grab)\n\u706B\u628A\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -12439,10 +12433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: 'Haptics is triggered by collision grab
-
-
-        Vibration is triggered by haptic zone'
+      value: "Haptics is triggered by collision grab\n\u89E6\u89C9\u53CD\u9988\u901A\u8FC7\u78B0\u649E\u6293\u53D6\u89E6\u53D1\n\nVibration is triggered by haptic zone\n\u706B\u7130\u632F\u52A8\u901A\u8FC7\u89E6\u89C9\u533A\u57DF\u89E6\u53D1"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset

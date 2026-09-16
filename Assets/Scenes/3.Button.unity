@@ -1052,7 +1052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Button (XR Interactable)
+      value: "Button (XR Interactable)\n\u6309\u94AE\uFF08XR \u4EA4\u4E92\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -1065,6 +1065,10 @@ PrefabInstance:
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8446940085426454621, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1080,11 +1084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: '
-
-        Haptics is triggered by XR event.
-
-'
+      value: "Haptics is triggered by XR event.\n\u89E6\u89C9\u53CD\u9988\u7531 XR \u4E8B\u4EF6\u89E6\u53D1\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -1097,6 +1097,10 @@ PrefabInstance:
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

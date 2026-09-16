@@ -47,7 +47,7 @@ OUT_FONT = os.path.join(OUT_DIR, "NotoSansSC-HexR-Subset.ttf")
 OUT_LICENCE = os.path.join(OUT_DIR, "NotoSansSC-OFL.txt")
 
 # Every non-Latin character used by the tutorial's in-world labels.
-CJK_CHARS = "。下中事于互交亮人以件体你入到制动匙区医压反发取受可右合吗吸呼和喷嘴器在域基增学将左并式强心感所手扣扳把抓拟择指按挤振捏掌控握搏撞放方时显有本机板果模气水泉泡流滴演火灯点焰版物球理用由电碰示穿类紧置能脉脏腕自苹藏觉触谜跳过近选透通部钥钮钻附隐雨面颈题食馈（），？"
+CJK_CHARS = "。上下中事于互交亮人以件体你入到制动匙区医压反发取受可右合吗吸呼和喷嘴器在域基增学将左并式强心感所手扣扳把抓拟择指按挤振捏掌控握搏撞放方时显有本机板果模气水泉泡流滴演火灯点焰版物球理用由电碰示穿类紧置能脉脏腕自苹藏觉触谜跳过近选透通部钥钮钻附隐雨面颈题食馈（），？"
 
 
 def charset():
