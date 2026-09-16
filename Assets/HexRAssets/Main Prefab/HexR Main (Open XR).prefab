@@ -2799,7 +2799,7 @@ GameObject:
   - component: {fileID: 4100039038910364776}
   - component: {fileID: 6461900407193594264}
   m_Layer: 0
-  m_Name: Right Hand Physics
+  m_Name: Right Pressure Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3108,7 +3108,7 @@ GameObject:
   - component: {fileID: 1162483658235158602}
   - component: {fileID: 5250689763309966709}
   m_Layer: 0
-  m_Name: Left Hand Physics
+  m_Name: Left Pressure Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

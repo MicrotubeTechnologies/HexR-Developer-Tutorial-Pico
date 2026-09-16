@@ -82,9 +82,9 @@ public class HexRInteractableHaptics : MonoBehaviour
     private void Start()
     {
         // Find the two Pressure Controllers by which hand they sit on rather than by an exact
-        // object name. The package's own auto-find looks for "Left/Right Pressure Controller",
-        // but the rig in this project names them "Left/Right Hand Physics" -- matching on the
-        // side works for either, and for a rig someone has renamed.
+        // object name. They are named "Left/Right Pressure Controller", which is what the
+        // package's own lookups require, but matching on the side keeps this working on a rig
+        // someone has renamed -- which this project's was, and it broke haptics everywhere.
         if (leftPressureTracker == null || rightPressureTracker == null)
         {
             PressureTrackerMain[] trackers = FindObjectsByType<PressureTrackerMain>(
