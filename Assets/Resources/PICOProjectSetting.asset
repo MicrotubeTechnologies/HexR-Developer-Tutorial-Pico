@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useContentProtect: 0
   isEyeTracking: 0
-  MRSafeguard: 0
+  MRSafeguard: 1
   isHandTracking: 1
   isEyeTrackingCalibration: 0
+  highFrequencyHand: 1
   displayFrequency: 0
   contentProtectFlags: 0
-  foveationEnable: 0
+  foveationEnable: 1
   foveatedRenderingMode: 0
-  foveatedRenderingLevel: 0
+  foveatedRenderingLevel: 2
   isSubsampledEnabled: 0
+  handTrackingSupportType: 0
   systemSplashScreen: {fileID: 0}
