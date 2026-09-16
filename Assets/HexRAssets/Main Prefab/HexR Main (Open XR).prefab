@@ -1006,6 +1006,11 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1027,9 +1032,11 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1080,6 +1087,7 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 32000
   m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &2461957559391179219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1207,11 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1220,9 +1233,11 @@ SkinnedMeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1273,6 +1288,7 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 32000
   m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &2503643324366356614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2375,7 @@ GameObject:
   - component: {fileID: 2159286414937762467}
   - component: {fileID: 3596971877594727963}
   - component: {fileID: 5789052200750220501}
+  - component: {fileID: 2297103161298427347}
   m_Layer: 0
   m_Name: HexR Main (Open XR)
   m_TagString: Untagged
@@ -2408,6 +2425,20 @@ MonoBehaviour:
   HexRPanel: {fileID: 0}
   RightBtText: {fileID: 0}
   LeftBtText: {fileID: 0}
+  FingertipColliderRadius: 0.008
+  LeftFingertipCenters:
+    Thumb: {x: 0, y: 0, z: 0}
+    Index: {x: 0.010278854, y: 0.004925685, z: 0.0014656868}
+    Middle: {x: 0.010278854, y: 0.004925685, z: 0.0014656868}
+    Ring: {x: 0.010278854, y: 0.004925685, z: 0.0014656868}
+    Little: {x: 0.010278854, y: 0.004925685, z: 0.0014656868}
+  RightFingertipCenters:
+    Thumb: {x: 0, y: 0, z: 0}
+    Index: {x: -0.0071, y: -0.0042, z: 0}
+    Middle: {x: -0.010278854, y: -0.004925685, z: 0.0014656868}
+    Ring: {x: -0.010278854, y: -0.004925685, z: 0.0014656868}
+    Little: {x: -0.010278854, y: -0.004925685, z: 0.0014656868}
+  PalmColliderSize: {x: 0.06, y: 0.017, z: 0.065}
 --- !u!114 &5789052200750220501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,6 +2451,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 160a2dfad9d8f29488ba8f2cd3bfedf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2297103161298427347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126384606502274510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6336806971044f4d8ad131d71120ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PassthroughToggle
+  startInPassthrough: 1
 --- !u!1 &5143656081425564886
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,10 +2829,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6272262293412561958}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2817,6 +2861,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c531c5c871f98984787d839dc4596095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handGrabInteractor: {fileID: 0}
+  pokeInteractor: {fileID: 0}
+  handType: 0
   ThumbPressure: 0
   IndexPressure: 0
   MiddlePressure: 0
@@ -2843,6 +2890,8 @@ MonoBehaviour:
   handType: 1
   handRoot: {fileID: 0}
   HexrRoot: {fileID: 4433650404772132492}
+  rotOffsetPalm: {x: 0, y: 0, z: 0}
+  rotOffsetFinger: {x: 0, y: 0, z: 0}
 --- !u!114 &4100039038910364776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3089,10 +3138,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7096849065168890517}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3124,6 +3173,8 @@ MonoBehaviour:
   handType: 0
   handRoot: {fileID: 0}
   HexrRoot: {fileID: 2204214949191019019}
+  rotOffsetPalm: {x: 0, y: 0, z: 0}
+  rotOffsetFinger: {x: 0, y: 0, z: 0}
 --- !u!114 &847855002104119674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3136,6 +3187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c531c5c871f98984787d839dc4596095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handGrabInteractor: {fileID: 0}
+  pokeInteractor: {fileID: 0}
+  handType: 0
   ThumbPressure: 0
   IndexPressure: 0
   MiddlePressure: 0

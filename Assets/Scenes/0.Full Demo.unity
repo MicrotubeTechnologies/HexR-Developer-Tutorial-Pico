@@ -39857,6 +39857,7 @@ GameObject:
   - component: {fileID: 2159286414998825735}
   - component: {fileID: 3596971877542610879}
   - component: {fileID: 5789052200802895217}
+  - component: {fileID: 5789052200802895218}
   m_Layer: 0
   m_Name: HexR Main (Open XR)
   m_TagString: Untagged
@@ -40709,6 +40710,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 160a2dfad9d8f29488ba8f2cd3bfedf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5789052200802895218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126384606433281130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6336806971044f4d8ad131d71120ebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PassthroughToggle
+  startInPassthrough: 1
 --- !u!136 &5856935006225834607
 CapsuleCollider:
   m_ObjectHideFlags: 0
