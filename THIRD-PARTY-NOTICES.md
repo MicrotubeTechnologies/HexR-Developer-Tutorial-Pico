@@ -99,11 +99,35 @@ established.
 **UNRESOLVED**. The rest of the folder (`Script/`, the prefabs and audio) is
 Microtube's own work and is covered by `LICENSE`.
 
+### Noto Sans SC — `Assets/HexRAssets/Asset/NotoSansSC-HexR-Subset.ttf`
+
+Google, under the SIL Open Font License 1.1 — the licence travels with the font
+as `Asset/NotoSansSC-OFL.txt`. Source:
+<https://github.com/google/fonts/tree/main/ofl/notosanssc>.
+
+This is a **modified version**: the upstream variable font is instanced at
+weight 400 and then subsetted to the ~130 characters the tutorial's bilingual
+labels actually use, which takes it from about 10 MB to 130 KB. `Tools/subset-noto-sans-sc.py`
+regenerates it and is the place to add a character if new Chinese text renders
+as boxes.
+
+The family is renamed to *Noto Sans SC HexR Subset*. Noto Sans SC descends from
+Adobe's Source Han Sans and the licence declares the Reserved Font Name
+"Source"; renaming a modified version keeps that question from arising, and is
+honest that this is not the whole font. The OFL permits modification and
+redistribution on these terms, so unlike most of the art here this one is
+settled.
+
+It is registered as a project-wide TextMesh Pro fallback in
+`Assets/TextMesh Pro/Resources/TMP Settings.asset`, which is what lets the
+Latin fonts render the Chinese half of each label.
+
 ### HexR demo assets — `Assets/HexRAssets/`
 
-Microtube Technologies' own work, covered by `LICENSE`, with one exception:
+Microtube Technologies' own work, covered by `LICENSE`, with two exceptions:
 `Asset/Electronic Highway Sign.TTF` is a third-party font whose licence has
-not been established — **UNRESOLVED**.
+not been established — **UNRESOLVED** — and `Asset/NotoSansSC-HexR-Subset.ttf`
+is under the OFL, as above.
 
 ---
 

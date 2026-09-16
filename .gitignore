@@ -84,3 +84,7 @@ crashlytics-build.properties
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Working copy of the full Noto Sans SC download, used only to regenerate the font subset
+# in Tools/subset-noto-sans-sc.py. 17 MB, and re-downloadable, so it is not committed.
+/Tools/_fontwork/
