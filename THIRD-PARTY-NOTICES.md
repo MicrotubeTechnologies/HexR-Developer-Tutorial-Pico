@@ -85,6 +85,14 @@ GUID and those fileIDs, detaching the rig from all five scenes. It compiles
 against XRI 3.6.0 unmodified apart from namespace fixes for the 3.x
 interactor/interactable move.
 
+**Local patch.** The two hand Direct Interactors in `XR Interaction Hands Setup`
+were set to take their Select input from an Input Action Reference and had none
+assigned, so they could never select anything -- objects were hoverable but could
+not be grabbed, while poking still worked because a poke needs no input. They now
+reference `XRI Left/Right Interaction/Select` and `Select Value` from the 3.6.0
+Starter Assets asset, which is the asset this project's Input Action Managers
+already enable, and whose bindings include the hand-tracking pinch.
+
 ### Demo art and props — `Assets/Gameobjects/`
 
 **UNRESOLVED.** `CoffeeCup`, `Confetti`, `Drill`, `Extinguisher`,
