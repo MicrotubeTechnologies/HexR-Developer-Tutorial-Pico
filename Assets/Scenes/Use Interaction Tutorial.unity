@@ -2237,6 +2237,8 @@ MonoBehaviour:
   pinky: 1
   palm: 1
   strength: 10
+  followGrip: 0
+  minStrength: 10
   leftPressureTracker: {fileID: 0}
   rightPressureTracker: {fileID: 0}
 --- !u!114 &827894442
@@ -4508,6 +4510,8 @@ MonoBehaviour:
   pinky: 1
   palm: 1
   strength: 10
+  followGrip: 0
+  minStrength: 10
   leftPressureTracker: {fileID: 0}
   rightPressureTracker: {fileID: 0}
 --- !u!114 &1515863833

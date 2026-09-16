@@ -48,6 +48,17 @@ public class HexRInteractableHaptics : MonoBehaviour
     [Range(0f, 60f)]
     public float strength = 30f;
 
+    [Header("Follow the grip")]
+    [Tooltip("Scale the pressure by how far the fingers are actually closed, instead of applying " +
+             "a fixed amount the moment XRI reports a select. Squeeze harder, feel more. This is " +
+             "what gets the palm/pinch nuance back: XRI has one binary select, but the glove's " +
+             "own finger tracking knows how closed each finger is.")]
+    public bool followGrip = true;
+
+    [Tooltip("Pressure at the lightest grip that still counts as holding.")]
+    [Range(0f, 60f)]
+    public float minStrength = 10f;
+
     [Header("Hands")]
     [Tooltip("Left and right Pressure Controllers. Found by name at Start when left empty.")]
     public PressureTrackerMain leftPressureTracker;
@@ -55,6 +66,8 @@ public class HexRInteractableHaptics : MonoBehaviour
 
     private XRBaseInteractable interactable;
     private PressureTrackerMain activeTracker;
+    private FingerUseTracking activeFingers;
+    private float appliedPressure = -1f;
 
     private void Awake()
     {
@@ -153,26 +166,86 @@ public class HexRInteractableHaptics : MonoBehaviour
         if (tracker == null) return;
         Release();              // never leave the other hand holding pressure
         activeTracker = tracker;
-
-        if (thumb) tracker.SingleThumbHaptic(strength);
-        if (index) tracker.SingleIndexHaptic(strength);
-        if (middle) tracker.SingleMiddleHaptic(strength);
-        if (ring) tracker.SingleRingHaptic(strength);
-        if (pinky) tracker.SinglePinkyHaptic(strength);
-        if (palm) tracker.SinglePalmHaptic(strength);
+        activeFingers = tracker.GetComponent<FingerUseTracking>();
+        appliedPressure = -1f;
+        Push(followGrip ? PressureFromGrip() : strength);
     }
 
-    private void Release()
+    private void Update()
+    {
+        if (activeTracker == null || !followGrip) return;
+        Push(PressureFromGrip());
+    }
+
+    /// <summary>
+    /// How closed are the fingers this object cares about, mapped onto the pressure range.
+    ///
+    /// FingerUseTracking normalises each finger's tip-to-knuckle distance to 1 when extended and
+    /// 0 when curled, so the grip is one minus that. It calibrates itself from the widest and
+    /// narrowest it has seen, which means the numbers are meaningless until the hand has opened
+    /// and closed once -- so an uncalibrated hand falls back to the fixed strength rather than
+    /// reporting a fully open hand and dropping the pressure to nothing.
+    /// </summary>
+    private float PressureFromGrip()
+    {
+        if (activeFingers == null) return strength;
+
+        float sum = 0f;
+        int n = 0;
+        if (thumb) { sum += activeFingers.ThumbUse; n++; }
+        if (index) { sum += activeFingers.IndexUse; n++; }
+        if (middle) { sum += activeFingers.MiddleUse; n++; }
+        if (ring) { sum += activeFingers.RingUse; n++; }
+        if (pinky) { sum += activeFingers.LittleUse; n++; }
+        if (n == 0) return strength;
+
+        float openness = sum / n;
+        if (openness <= 0f) return strength;            // not calibrated yet
+
+        float grip = Mathf.Clamp01(1f - openness);
+        return Mathf.Lerp(minStrength, strength, grip);
+    }
+
+    /// <summary>
+    /// Sends a pressure, but only when it has actually changed. The glove quantises pressure to
+    /// steps of 10 -- HexRGrabbable rounded to the same grid -- so following the grip literally
+    /// every frame would be dozens of identical Bluetooth writes a second for no perceptible gain.
+    /// </summary>
+    private void Push(float pressure)
     {
         if (activeTracker == null) return;
 
+        float stepped = Mathf.Round(Mathf.Clamp(pressure, 0f, 60f) / 10f) * 10f;
+        if (Mathf.Approximately(stepped, appliedPressure)) return;
+        appliedPressure = stepped;
+
+        if (stepped <= 0f) { RemoveAll(); return; }
+
+        if (thumb) activeTracker.SingleThumbHaptic(stepped);
+        if (index) activeTracker.SingleIndexHaptic(stepped);
+        if (middle) activeTracker.SingleMiddleHaptic(stepped);
+        if (ring) activeTracker.SingleRingHaptic(stepped);
+        if (pinky) activeTracker.SinglePinkyHaptic(stepped);
+        if (palm) activeTracker.SinglePalmHaptic(stepped);
+    }
+
+    private void RemoveAll()
+    {
+        if (activeTracker == null) return;
         if (thumb) activeTracker.RemoveThumbHaptics();
         if (index) activeTracker.RemoveIndexHaptics();
         if (middle) activeTracker.RemoveMiddleHaptics();
         if (ring) activeTracker.RemoveRingHaptics();
         if (pinky) activeTracker.RemovePinkyHaptics();
         if (palm) activeTracker.RemovePalmHaptics();
+    }
 
+    private void Release()
+    {
+        if (activeTracker == null) return;
+        RemoveAll();
         activeTracker = null;
+        activeFingers = null;
+        appliedPressure = -1f;
     }
 }
