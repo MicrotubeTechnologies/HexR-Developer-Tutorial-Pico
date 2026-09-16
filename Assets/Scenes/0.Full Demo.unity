@@ -1205,7 +1205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: "\u4EBA\u7C7B\u5FC3\u810F\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
+      value: "Heart (Palm Grab)\n\u4EBA\u7C7B\u5FC3\u810F\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -1233,14 +1233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: '
-
-        Grab for HeartBeat Haptics
-
-
-        Squeeze to increase heartbeat
-
-'
+      value: "Grab for heartbeat haptics\n\u6293\u53D6\u4EE5\u611F\u53D7\u5FC3\u8DF3\u89E6\u89C9\n\nSqueeze to increase\n\u6324\u538B\u4EE5\u589E\u5F3A\u5FC3\u8DF3"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -1254,18 +1247,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-    - {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 850633336}
-    - targetCorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 550772935}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
 --- !u!4 &148921903 stripped
 Transform:
@@ -2783,7 +2772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: "\u82F9\u679C (\u81EA\u7531\u89E6\u89C9)"
+      value: "Apple (Free Haptics)\n\u82F9\u679C\uFF08\u81EA\u7531\u89E6\u89C9\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -2811,7 +2800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: "\u89E6\u89C9\u53CD\u9988\u662F\u57FA\u4E8E\u7269\u7406\u78B0\u649E\u4F53\u89E6\u53D1\u7684\u3002"
+      value: "Haptics is triggered based on physics collider.\n\u89E6\u89C9\u53CD\u9988\u57FA\u4E8E\u7269\u7406\u78B0\u649E\u4F53\u89E6\u53D1\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -2825,18 +2814,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-    - {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1380179926}
-    - targetCorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1796391915}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
 --- !u!4 &323486773 stripped
 Transform:
@@ -2923,45 +2908,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2687741451188026462, guid: 65c99d58d56eefb4d87cd32b3b67d66e, type: 3}
   m_PrefabInstance: {fileID: 340027339}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &345183899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 1098867060}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &345183903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345183899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u89E6\u89C9\u53CD\u9988\u5728\u634F\u5408\u65F6\u89E6\u53D1"
 --- !u!1 &349211065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,45 +3842,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2687741451188026462, guid: 65c99d58d56eefb4d87cd32b3b67d66e, type: 3}
   m_PrefabInstance: {fileID: 483737857}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &487408506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 7796480894103024843}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &487408510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487408506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u89E6\u89C9\u53CD\u9988\u901A\u8FC7\u78B0\u649E\u6293\u53D6\u89E6\u53D1\u3002\n\n\u706B\u7130\u632F\u52A8\u901A\u8FC7\u89E6\u89C9\u533A\u57DF\u89E6\u53D1\u3002"
 --- !u!1 &494980598
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,45 +4083,6 @@ Transform:
   - {fileID: 2088178850}
   m_Father: {fileID: 494980599}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &550772931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 148921902}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &550772935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550772931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u6293\u53D6\u5FC3\u8DF3\u89E6\u89C9\u53CD\u9988\n\n\u6324\u538B\u4EE5\u589E\u52A0\u5FC3\u8DF3"
 --- !u!1001 &557369487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8744,45 +8612,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Renderer: {fileID: 264565266}
   m_MaterialIndex: 0
---- !u!1 &824248622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 1098867060}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &824248626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824248622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u94A5\u5319\uFF08\u634F\u53D6\uFF09"
 --- !u!1 &831612115
 GameObject:
   m_ObjectHideFlags: 0
@@ -9113,84 +8942,6 @@ MonoBehaviour:
       followLowerSmoothingValue: 12
       followUpperSmoothingValue: 16
     m_Variable: {fileID: 11400000, guid: 979c1b69d98e91041bc1c5c6e63aab97, type: 2}
---- !u!1 &847438509 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 7796480894103024843}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &847438513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847438509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u706B\u628A\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
---- !u!1 &850633332 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 148921902}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &850633336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850633332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u4EBA\u7C7B\u5FC3\u810F\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
 --- !u!1 &881552375
 GameObject:
   m_ObjectHideFlags: 0
@@ -13928,7 +13679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Key (Pinch Grab)
+      value: "Key (Pinch Grab)\n\u94A5\u5319\uFF08\u634F\u53D6\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -13956,7 +13707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: "\u89E6\u89C9\u53CD\u9988\u5728\u634F\u5408\u65F6\u89E6\u53D1"
+      value: "Haptics is triggered on pinch\n\u89E6\u89C9\u53CD\u9988\u5728\u634F\u5408\u65F6\u89E6\u53D1"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -13970,18 +13721,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-    - {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 824248626}
-    - targetCorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 345183903}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
 --- !u!4 &1098867061 stripped
 Transform:
@@ -21885,45 +21632,6 @@ Transform:
   - {fileID: 12802049}
   m_Father: {fileID: 1203308392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1380179922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 323486772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1380179926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380179922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u82F9\u679C\uFF08\u81EA\u7531\u89E6\u89C9\uFF09"
 --- !u!1 &1393170623
 GameObject:
   m_ObjectHideFlags: 0
@@ -26001,7 +25709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Button (XR Interactable)
+      value: "Lightbulb Puzzle\n\u706F\u6CE1\u8C1C\u9898"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -26029,11 +25737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: '
-
-        Haptics is triggered by XR event.
-
-'
+      value: "Can you light every bulb by pressing the buttons?\n\u4F60\u80FD\u901A\u8FC7\u6309\u4E0B\u6309\u94AE\u70B9\u4EAE\u6240\u6709\u706F\u6CE1\u5417\uFF1F"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -26047,18 +25751,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-    - {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1753557857}
-    - targetCorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1778958873}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
 --- !u!4 &1566878185 stripped
 Transform:
@@ -26941,45 +26637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Renderer: {fileID: 1778935736}
   m_MaterialIndex: 0
---- !u!1 &1753557853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 1566878184}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1753557857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753557853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u706F\u6CE1\u8C1C\u9898\n"
 --- !u!1 &1762598891
 GameObject:
   m_ObjectHideFlags: 0
@@ -27240,45 +26897,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778935734}
   m_Mesh: {fileID: -8847045846954475538, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
---- !u!1 &1778958869 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 1566878184}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1778958873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778958869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u4F60\u80FD\u901A\u8FC7\u6309\u4E0B\u6309\u94AE\u70B9\u4EAE\u6240\u6709\u7684\u706F\u6CE1\u5417\uFF1F"
 --- !u!1 &1788863072
 GameObject:
   m_ObjectHideFlags: 0
@@ -27417,45 +27035,6 @@ Transform:
   - {fileID: 475748419}
   m_Father: {fileID: 428770612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1796391911 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 323486772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1796391915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796391911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u89E6\u89C9\u53CD\u9988\u662F\u57FA\u4E8E\u7269\u7406\u78B0\u649E\u4F53\u89E6\u53D1\u7684\u3002"
 --- !u!1 &1831979095
 GameObject:
   m_ObjectHideFlags: 0
@@ -29891,7 +29470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: Button (XR Interactable)
+      value: "Medical Simulation\n\u533B\u5B66\u6A21\u62DF"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -29919,11 +29498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: '
-
-        Haptics is triggered by XR event.
-
-'
+      value: "Feel the pulse at the wrist and neck, and breathing near the mouth.\n\u4F60\u53EF\u4EE5\u5728\u624B\u8155\u548C\u9888\u90E8\u611F\u53D7\u5230\u8109\u640F\uFF0C\u5728\u5634\u90E8\u9644\u8FD1\u611F\u53D7\u5230\u547C\u5438\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -29937,102 +29512,16 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-    - {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2088178854}
-    - targetCorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2088178853}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
 --- !u!4 &2088178850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5547698085520796559, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
   m_PrefabInstance: {fileID: 2088178849}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2088178851 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 2088178849}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2088178852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-  m_PrefabInstance: {fileID: 2088178849}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2088178853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088178851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u4F60\u53EF\u4EE5\u5728\u4ED6\u7684\u624B\u8155\u548C\u8116\u5B50\u4E0A\u611F\u53D7\u5230\u8109\u640F\uFF0C\u5728\u4ED6\u7684\u5634\u90E8\u9644\u8FD1\u611F\u53D7\u5230\u547C\u5438\u3002"
---- !u!114 &2088178854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088178852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u533B\u5B66\u6A21\u62DF"
 --- !u!1 &2091623961
 GameObject:
   m_ObjectHideFlags: 0
@@ -45538,7 +45027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: "\u706B\u628A\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
+      value: "Torch (Palm Grab)\n\u706B\u628A\uFF08\u638C\u5FC3\u6293\u53D6\uFF09"
       objectReference: {fileID: 0}
     - target: {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -45566,10 +45055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_text
-      value: 'Haptics is triggered by collision grab
-
-
-        Fire Vibration is triggered by haptic zone'
+      value: "Haptics is triggered by collision grab\n\u89E6\u89C9\u53CD\u9988\u901A\u8FC7\u78B0\u649E\u6293\u53D6\u89E6\u53D1\n\nVibration is triggered by haptic zone\n\u706B\u7130\u632F\u52A8\u901A\u8FC7\u89E6\u89C9\u533A\u57DF\u89E6\u53D1"
       objectReference: {fileID: 0}
     - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
       propertyPath: m_fontAsset
@@ -45583,18 +45069,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6644943994758992965, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-    - {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+    - target: {fileID: 8888682032393508169, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7909542523850380140, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 847438513}
-    - targetCorrespondingSourceObject: {fileID: 826685045576020382, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 487408510}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76829936c239bbf429d37396a8adfda0, type: 3}
 --- !u!4 &7796480894103024844 stripped
 Transform:
