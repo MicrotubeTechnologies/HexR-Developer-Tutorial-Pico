@@ -884,6 +884,61 @@
                     "action": "Thumbstick",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "18481f34-4b4f-4871-8505-95cb5953e930",
+                    "path": "<HexRFallbackHand>{LeftHand}/aimPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4090989f-8e20-4a2e-87b0-d3ccb98f4619",
+                    "path": "<HexRFallbackHand>{LeftHand}/aimRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "322bd97d-a3e0-4f4a-90d8-62335aa2d3a3",
+                    "path": "<HexRFallbackHand>{LeftHand}/pinchPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b805bd39-0978-4963-bd5c-947af13b1d9b",
+                    "path": "<HexRFallbackHand>{LeftHand}/pokePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5855f12-5dd6-46aa-9a42-ebe12e0ec38d",
+                    "path": "<HexRFallbackHand>{LeftHand}/pokeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -1026,7 +1081,7 @@
                 {
                     "name": "",
                     "id": "3bbf9f24-2edd-41b9-8456-683298f1e58c",
-                    "path": "<HandInteraction>{LeftHand}/graspFirm",
+                    "path": "<HandInteraction>{LeftHand}/graspValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1037,7 +1092,7 @@
                 {
                     "name": "",
                     "id": "a86585c7-1d41-40e2-a7ca-bb76cca5c32a",
-                    "path": "<HandInteraction>{LeftHand}/pinchTouched",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1070,7 +1125,7 @@
                 {
                     "name": "",
                     "id": "502d470d-dc8a-46a5-8391-81cba04305cf",
-                    "path": "<XRHandDevice>{LeftHand}/pinchTouched",
+                    "path": "<XRHandDevice>{LeftHand}/pinchValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1081,7 +1136,7 @@
                 {
                     "name": "",
                     "id": "7fa12256-8331-468c-9951-60255e867cd6",
-                    "path": "<XRHandDevice>{LeftHand}/graspFirm",
+                    "path": "<XRHandDevice>{LeftHand}/graspValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -1372,6 +1427,50 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "",
                     "action": "Translate Manipulation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15136089-3831-4673-8fa3-d48d60f464c7",
+                    "path": "<HexRFallbackHand>{LeftHand}/pinchTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c3565a95-3d3e-4c70-a722-377db3bd7933",
+                    "path": "<HexRFallbackHand>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a8216eba-e936-498f-a4aa-1ba9f2a9f4fc",
+                    "path": "<HexRFallbackHand>{LeftHand}/pinchTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8a2305fc-469c-4bc9-ab26-962967ce4a4c",
+                    "path": "<HexRFallbackHand>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2065,6 +2164,61 @@
                     "action": "Thumbstick",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c216ce5-a426-4d2e-b249-f2f609cf0f76",
+                    "path": "<HexRFallbackHand>{RightHand}/aimPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "25b5c3ef-ca66-4fef-8d4f-8f6c9ee8d6c8",
+                    "path": "<HexRFallbackHand>{RightHand}/aimRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3fdabf66-d71f-4698-9825-1392617d8c25",
+                    "path": "<HexRFallbackHand>{RightHand}/pinchPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ac9557d-45dd-4067-b427-c88151fd39b0",
+                    "path": "<HexRFallbackHand>{RightHand}/pokePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ac4a26b-2b74-49a4-8d09-dd5821cea1b1",
+                    "path": "<HexRFallbackHand>{RightHand}/pokeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -2207,7 +2361,7 @@
                 {
                     "name": "",
                     "id": "1fe3ab58-51f3-4274-995c-176ac72d9610",
-                    "path": "<HandInteraction>{RightHand}/graspFirm",
+                    "path": "<HandInteraction>{RightHand}/graspValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2218,7 +2372,7 @@
                 {
                     "name": "",
                     "id": "f6083118-4e38-45a2-afaf-52fa60444f78",
-                    "path": "<HandInteraction>{RightHand}/pinchTouched",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2262,7 +2416,7 @@
                 {
                     "name": "",
                     "id": "6e62575c-e262-4a40-91f0-8a4dd9ffb2d9",
-                    "path": "<XRHandDevice>{RightHand}/pinchTouched",
+                    "path": "<XRHandDevice>{RightHand}/pinchValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2273,7 +2427,7 @@
                 {
                     "name": "",
                     "id": "ffad08e7-8ce9-47a3-b22c-a5295117a45a",
-                    "path": "<XRHandDevice>{RightHand}/graspFirm",
+                    "path": "<XRHandDevice>{RightHand}/graspValue",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2575,6 +2729,50 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "",
                     "action": "Translate Manipulation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93252094-fc2a-4868-b18b-291393a8943d",
+                    "path": "<HexRFallbackHand>{RightHand}/pinchTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "237a3597-4c74-45c5-96e9-bf09c06889ae",
+                    "path": "<HexRFallbackHand>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "90bdbc46-dff8-494e-a7cf-48ea6c22e6f1",
+                    "path": "<HexRFallbackHand>{RightHand}/pinchTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3494eba-0921-4f2f-8dea-d56a1fee8805",
+                    "path": "<HexRFallbackHand>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -2863,7 +2863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handGrabInteractor: {fileID: 0}
   pokeInteractor: {fileID: 0}
-  handType: 0
+  handType: 1
   ThumbPressure: 0
   IndexPressure: 0
   MiddlePressure: 0

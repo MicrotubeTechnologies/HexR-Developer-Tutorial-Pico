@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Microtube
-  productName: HexR developer tutorial XR
+  productName: HexR Pico Developer Tutorial
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -150,9 +150,7 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 9015896585985488373, guid: d3eb19778f7e8fd4b980eabf3d24bdfa, type: 2}
-  - {fileID: 6741035758850323326, guid: 281c75868312ed14a9a6cbe8c4ce0ae3, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   xboxOneDisableKinectGpuReservation: 1

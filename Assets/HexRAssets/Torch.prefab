@@ -14842,7 +14842,6 @@ GameObject:
   - component: {fileID: 6994110961773802960}
   - component: {fileID: 6378654621581225492}
   - component: {fileID: 5883904791787582506}
-  - component: {fileID: 3027067977654035731}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -14918,53 +14917,6 @@ CapsuleCollider:
   m_Height: 0.1948024
   m_Direction: 1
   m_Center: {x: -0.00043517724, y: -0.05100113, z: -0.0012814626}
---- !u!114 &3027067977654035731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7621961757928261649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182911c9fa462f340aa196f3bb1482fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TypeOfGrab: 1
-  Gravity: 1
-  HapticStrength: 40
-  OnGrab:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8496806854118382463}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 40
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3926333757532855488}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  isGrab: 0
-  InvokeEventReady: 1
 --- !u!1 &8101549963409592327
 GameObject:
   m_ObjectHideFlags: 0

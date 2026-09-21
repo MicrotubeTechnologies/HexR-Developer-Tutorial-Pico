@@ -1,3 +1,4 @@
+using HexR;
 using UnityEngine;
 using Unity.XR.OpenXR.Features.PICOSupport;
 
@@ -20,7 +21,7 @@ using Unity.XR.OpenXR.Features.PICOSupport;
 /// scene in this project. Leaving it untouched keeps that hazard where it is, and it makes the
 /// VR/MR switch genuinely reversible: the original camera settings are restored on the way back.
 /// </summary>
-public class PassthroughToggle : MonoBehaviour
+public class PassthroughToggle : MonoBehaviour, IHexRPassthrough
 {
     [Tooltip("Start the scene in passthrough. Untick to start in VR and switch over at runtime.")]
     public bool startInPassthrough = true;
@@ -56,6 +57,32 @@ public class PassthroughToggle : MonoBehaviour
     private void Start()
     {
         SetPassthrough(startInPassthrough);
+    }
+
+    /// <summary>
+    /// Re-finds the XR camera and re-applies the current mode.
+    ///
+    /// This component rides on the HexR rig, which survives scene loads. The camera it dims does
+    /// not -- every scene brings its own XR Origin -- so after a load the cached camera is a
+    /// destroyed object and the VR/MR switch silently stops working, with no error to go on.
+    /// HexRFloatingMenu calls this after every load; anything else that changes scenes should too.
+    /// </summary>
+    public void RefreshCamera()
+    {
+        Camera current = Camera.main;
+        if (current == null || current == xrCamera)
+        {
+            return;
+        }
+
+        xrCamera = current;
+
+        // Captured from the incoming camera, not carried over from the old one, so switching back
+        // to VR restores this scene's sky rather than the previous scene's.
+        vrClearFlags = xrCamera.clearFlags;
+        vrBackgroundColor = xrCamera.backgroundColor;
+
+        SetPassthrough(isPassthrough);
     }
 
     /// <summary>Wired to the hand menu's passthrough button. Takes no arguments so it can be
@@ -94,6 +121,14 @@ public class PassthroughToggle : MonoBehaviour
     }
 
     /// <summary>Whether the scene is currently showing the room.</summary>
+    // The HexR menu ships in the package and cannot see this class, so it asks through
+    // IHexRPassthrough instead. These just forward to the methods that were already here.
+    bool IHexRPassthrough.IsAvailable { get { return IsAvailable; } }
+
+    bool IHexRPassthrough.IsOn { get { return IsPassthroughOn(); } }
+
+    void IHexRPassthrough.Toggle() { TogglePassthrough(); }
+
     public bool IsPassthroughOn()
     {
         return isPassthrough;

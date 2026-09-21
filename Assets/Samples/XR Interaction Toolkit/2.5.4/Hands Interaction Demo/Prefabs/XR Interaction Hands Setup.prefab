@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5773256366622995465}
+  - component: {fileID: 8094593049000978953}
   m_Layer: 0
   m_Name: XR Interaction Hands Setup
   m_TagString: Untagged
@@ -35,6 +36,25 @@ Transform:
   - {fileID: 8733093507751517968}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8094593049000978953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865075385244835223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54241d71d52ae074cbd31ff690eeda36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HexRFallbackHandDriver
+  mode: 0
+  decisionDelaySeconds: 1
+  closedRatio: 0.25
+  openRatio: 0.7
+  pressThreshold: 0.85
+  releaseThreshold: 0.6
+  trackingLossGraceSeconds: 0.25
 --- !u!1 &4763085286836561815
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,13 +265,29 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_Handedness
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483745
+      objectReference: {fileID: 0}
+    - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_InputCompatibilityMode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_SelectInput.m_InputActionReferenceValue
+      value: 
+      objectReference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_UIPressInput.m_InputActionReferenceValue
       value: 
       objectReference: {fileID: -5908353012961274365, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_SelectInput.m_InputActionReferencePerformed
+      value: 
+      objectReference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 825434954720726026, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_UIPressInput.m_InputActionReferencePerformed
       value: 
@@ -308,6 +344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig)
       objectReference: {fileID: 0}
+    - target: {fileID: 2572820093246560282, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483745
+      objectReference: {fileID: 0}
     - target: {fileID: 2945826935290517874, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_InputCompatibilityMode
       value: 2
@@ -320,28 +360,84 @@ PrefabInstance:
       propertyPath: m_Origin
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3557840064565183711, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557840064565183711, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsTriggerInteraction
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4736731707678021804, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_Parameters.widthMultiplier
       value: 0.0035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802244060605695621, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483745
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_Handedness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483745
       objectReference: {fileID: 0}
     - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_InputCompatibilityMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_SelectInput.m_InputActionReferenceValue
+      value: 
+      objectReference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_UIPressInput.m_InputActionReferenceValue
       value: 
       objectReference: {fileID: 71106601250685021, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_SelectInput.m_InputActionReferencePerformed
+      value: 
+      objectReference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 5543534632417482985, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_UIPressInput.m_InputActionReferencePerformed
       value: 
       objectReference: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 5786981526182599232, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786981526182599232, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsTriggerInteraction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237049687586235588, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_Handedness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209797214075343310, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_Handedness
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8227192243087186103, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_InputCompatibilityMode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8574486981646720036, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_Handedness
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574486981646720036, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_InputCompatibilityMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574486981646720036, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574486981646720036, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsTriggerInteraction
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8574486981646720036, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
@@ -353,7 +449,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 9034274667510444962, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_Handedness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9034274667510444962, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
       propertyPath: m_InputCompatibilityMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9034274667510444962, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 9034274667510444962, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
+      propertyPath: m_PhysicsTriggerInteraction
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9034274667510444962, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}

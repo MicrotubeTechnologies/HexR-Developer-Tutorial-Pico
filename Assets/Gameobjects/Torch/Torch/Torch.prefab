@@ -5070,7 +5070,6 @@ GameObject:
   - component: {fileID: 6994210306668658551}
   - component: {fileID: 5232445828094669533}
   - component: {fileID: 7499935380596880076}
-  - component: {fileID: 2732718111614256798}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -5144,75 +5143,6 @@ CapsuleCollider:
   m_Height: 0.1948024
   m_Direction: 1
   m_Center: {x: -0.00043517724, y: -0.05100113, z: -0.0012814626}
---- !u!114 &2732718111614256798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2313903619340579591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182911c9fa462f340aa196f3bb1482fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TypeOfGrab: 1
-  Gravity: 1
-  OnGrab:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HexR.PressureTrackerMain, Assembly-CSharp
-        m_MethodName: TriggerAllHapticsIncrease
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 40
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HexR.PressureTrackerMain, Assembly-CSharp
-        m_MethodName: TriggerAllHapticsIncrease
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 40
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HexR.PressureTrackerMain, Assembly-CSharp
-        m_MethodName: RemoveAllHaptics
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HexR.PressureTrackerMain, Assembly-CSharp
-        m_MethodName: RemoveAllHaptics
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  isGrab: 0
 --- !u!1 &5541191836913253936
 GameObject:
   m_ObjectHideFlags: 0
