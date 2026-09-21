@@ -32400,9 +32400,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7096849065221139249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1140640302, guid: dffea59c290622e438fc4f11872007ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 31d314e6cfab95f44b0183e301ce3bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whichHand: 0
+  BuildPlatform: 0
+  batteryState: 0
+  sourcePres: 80
+  targetDeviceName: HaptGloveAR Right
+  targetDeviceAddress: 
+  OptionalCustomDeviceName: HaptGloveAR Right
+  UseCustomDeviceName: 0
+  btText: 
+  btSendText: 
+  bleConnected: 0
+  hapticsInteratableLayers: 
+  isQuest: 0
+  isScanning: 0
 --- !u!1 &1163306006854370427
 GameObject:
   m_ObjectHideFlags: 0
@@ -37903,8 +37917,6 @@ MonoBehaviour:
   isQuest: 0
   leftHand: {fileID: 1162483658308215278}
   rightHand: {fileID: 4100039038845173196}
-  HandMenu: {fileID: 666941226}
-  NewHandMenu: {fileID: 666941226}
   BluetoothIndicatorL: {fileID: 127666799}
   BluetoothIndicatorR: {fileID: 1847367779}
   pumpIndicator_L: {fileID: 1869860641}
@@ -38629,9 +38641,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6272262293464745346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1140640302, guid: dffea59c290622e438fc4f11872007ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 31d314e6cfab95f44b0183e301ce3bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whichHand: 1
+  BuildPlatform: 0
+  batteryState: 0
+  sourcePres: 80
+  targetDeviceName: HaptGloveAR Right
+  targetDeviceAddress: 
+  OptionalCustomDeviceName: HaptGloveAR Right
+  UseCustomDeviceName: 0
+  btText: 
+  btSendText: 
+  bleConnected: 0
+  hapticsInteratableLayers: 
+  isQuest: 0
+  isScanning: 0
 --- !u!4 &4145046147293917499
 Transform:
   m_ObjectHideFlags: 0
