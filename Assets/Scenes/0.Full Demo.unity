@@ -30183,6 +30183,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4145046147293917499}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2069260799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3564021754838651801, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0924bcaa9eb50df458a783ae0e2b59f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2069260800 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1591053059546818195, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0924bcaa9eb50df458a783ae0e2b59f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2069260807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1226442791817997177, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2069260814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1917321451545871615, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2071576948
 GameObject:
   m_ObjectHideFlags: 0
@@ -32575,8 +32619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c531c5c871f98984787d839dc4596095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handGrabInteractor: {fileID: 0}
-  pokeInteractor: {fileID: 0}
+  handGrabInteractor: {fileID: 2069260814}
+  pokeInteractor: {fileID: 2069260799}
   handType: 0
   ThumbPressure: 0
   IndexPressure: 0
@@ -43384,8 +43428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c531c5c871f98984787d839dc4596095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handGrabInteractor: {fileID: 0}
-  pokeInteractor: {fileID: 0}
+  handGrabInteractor: {fileID: 2069260807}
+  pokeInteractor: {fileID: 2069260800}
   handType: 1
   ThumbPressure: 0
   IndexPressure: 0
@@ -43773,7 +43817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0aecde72db21346911e67bd5c3ae56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexRHandNearSource
-  searchRoot: {fileID: 332293768}
+  searchRoot: {fileID: 0}
   grabHoverCountsAsNear: 1
 --- !u!1 &7977177075010204885
 GameObject:
@@ -46920,7 +46964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0aecde72db21346911e67bd5c3ae56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexRHandNearSource
-  searchRoot: {fileID: 634883530}
+  searchRoot: {fileID: 0}
   grabHoverCountsAsNear: 1
 --- !u!4 &8852173789118548951
 Transform:

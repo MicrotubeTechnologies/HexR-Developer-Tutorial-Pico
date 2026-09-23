@@ -119,6 +119,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &90643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3564021754838651801, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0924bcaa9eb50df458a783ae0e2b59f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &90644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1591053059546818195, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0924bcaa9eb50df458a783ae0e2b59f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &90651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1226442791817997177, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &90658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1917321451545871615, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
+  m_PrefabInstance: {fileID: 3113582726696116334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5525091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6261,6 +6305,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 847855002104119674, guid: caecc2345cb6a984d87f1af4f5254c35, type: 3}
+      propertyPath: pokeInteractor
+      value: 
+      objectReference: {fileID: 90643}
+    - target: {fileID: 847855002104119674, guid: caecc2345cb6a984d87f1af4f5254c35, type: 3}
+      propertyPath: handGrabInteractor
+      value: 
+      objectReference: {fileID: 90658}
     - target: {fileID: 1822438687682315440, guid: caecc2345cb6a984d87f1af4f5254c35, type: 3}
       propertyPath: handRoot
       value: 
@@ -6337,6 +6389,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HexR Main (Open XR)
       objectReference: {fileID: 0}
+    - target: {fileID: 7587032033531243993, guid: caecc2345cb6a984d87f1af4f5254c35, type: 3}
+      propertyPath: pokeInteractor
+      value: 
+      objectReference: {fileID: 90644}
+    - target: {fileID: 7587032033531243993, guid: caecc2345cb6a984d87f1af4f5254c35, type: 3}
+      propertyPath: handGrabInteractor
+      value: 
+      objectReference: {fileID: 90651}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6417,7 +6477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0aecde72db21346911e67bd5c3ae56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexRHandNearSource
-  searchRoot: {fileID: 332293768}
+  searchRoot: {fileID: 0}
   grabHoverCountsAsNear: 1
 --- !u!114 &2098701246
 MonoBehaviour:
@@ -6431,7 +6491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0aecde72db21346911e67bd5c3ae56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexRHandNearSource
-  searchRoot: {fileID: 634883530}
+  searchRoot: {fileID: 0}
   grabHoverCountsAsNear: 1
 --- !u!1001 &2130122561
 PrefabInstance:
