@@ -4193,7 +4193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536486565}
   m_Layer: 0
-  m_Name: Medical Demo Components
+  m_Name: Medical Demo (hidden)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
