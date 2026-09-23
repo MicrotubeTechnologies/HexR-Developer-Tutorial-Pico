@@ -35,6 +35,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: RimLight
   m_Shader: {fileID: -6465566751694194690, guid: 4ff4bf42ffc12e34a9c53b2f216f5442, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _BUILTIN_SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords:
@@ -48,6 +50,7 @@ Material:
   disabledShaderPasses:
   - SHADOWCASTER
   - DepthOnly
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -159,3 +162,4 @@ Material:
     - _MainColor: {r: 0, g: 0, b: 0, a: 0.7254902}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
