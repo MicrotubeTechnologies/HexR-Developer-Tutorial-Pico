@@ -22057,6 +22057,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HexR Floating Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 2307202341052503110, guid: 9ae763c441f9b7247bcdbb2e8bb1abcc, type: 3}
+      propertyPath: showSceneSwitcher
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307202341052503110, guid: 9ae763c441f9b7247bcdbb2e8bb1abcc, type: 3}
+      propertyPath: showHapticsReadout
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7098083529948413272, guid: 9ae763c441f9b7247bcdbb2e8bb1abcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7501
