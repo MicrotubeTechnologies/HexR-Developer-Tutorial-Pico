@@ -25,11 +25,15 @@ OpenXR runtime; PICO is what it is configured and tested for.
 
 ### Steps to get started
 
-1. **Clone this repository.**
+1. **Clone this repository's `Pico-Version` branch.** The repository's default branch,
+   `main`, is an older, generic OpenXR line, so name the branch:
 
    ```
-   git clone https://github.com/MicrotubeTechnologies/HexR-developer-tutorial-XR
+   git clone -b Pico-Version https://github.com/MicrotubeTechnologies/HexR-Developer-Tutorial-Pico.git
    ```
+
+   On Windows, clone into a short path such as `C:\Dev\`: Git cannot create a file whose
+   full path is longer than 260 characters, and reports *Filename too long*.
 
 2. **Open it in Unity 6000.6.0f1.** First open takes a while: Unity fetches
    `com.microtube.hexr` and imports the project.
