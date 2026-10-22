@@ -90,6 +90,22 @@ The second thing to check is that the object you are touching has a
 without one `IsHandNear()` is false forever and haptics silently never fire.
 See *Determine if hand is near* under **HexR Code Structure** below.
 
+### HexR Remote
+
+Every scene has a **HexR Remote** under the rig. A phone or computer running the
+HexR Tester on the same Wi-Fi (Android **Headsets** tab 1.1.0 or later, Windows
+**Headsets** screen 0.3.0 or later) finds the headset within a few seconds. From
+there it can connect and disconnect the gloves, switch scenes, and, once the
+wearer allows it at the headset's prompt, show what the wearer sees, with the
+app's sound. On PICO, connecting a glove from the phone is slower than from the
+menu, and the first request to share the view has failed once in testing; asking
+again worked.
+
+It listens on UDP 47800 and TCP 47801–47803 with no access control, so run it
+on a network you trust, and delete the **HexR Remote** object from the scenes to
+ship an app without it. Every setting is described in the package's
+[HexR Remote guide](https://github.com/MicrotubeTechnologies/com.microtube.hexr#hexr-remote-phones-and-computers-that-run-the-event).
+
 ---
 
 <details>
@@ -339,12 +355,6 @@ see how one piece is built.
 > This scene's HexR rig is unpacked rather than a prefab instance, so edits to
 > `HexR Main (Open XR)` in the package do not propagate into it. Prefer the
 > numbered tutorial scenes when you want a rig that tracks the package.
-
-## Demo scene — Use Interaction Tutorial
-
-Demonstrates `HexRUsable`: triggering haptics when an object is *used* (a
-trigger pulled, a tool activated) rather than merely grabbed. The torch is the
-worked example.
 
 ---
 
